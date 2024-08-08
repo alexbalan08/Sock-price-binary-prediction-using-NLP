@@ -20,7 +20,10 @@ Different available open source models tested, including finBERT (specific for f
 #Main Steps:
 
 -Fiancial data and news colected from FactSets.com (https://www.factset.com)
+
 -Data cleaned and pre processed
+
 -Impleemntation of BERT, roBERTa and finBERT (pre trained and fine tuned)
+
 -Testing
 
