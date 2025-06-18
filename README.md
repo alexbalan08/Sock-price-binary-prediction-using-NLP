@@ -2,6 +2,8 @@
 
 **Note:** Testing has been done, and code and results might differ from the baseline.
 
+The labeled dataset I created is available on Kaggle as well: https://www.kaggle.com/datasets/alexbalan08/car-manufacturing-companies-related-newsreports
+
 
 Predicting stock price movements based on news, focusing on a specific business sector- car manufacteering
 
