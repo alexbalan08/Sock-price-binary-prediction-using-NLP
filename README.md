@@ -2,12 +2,12 @@
 
 This project explores the use of Natural Language Processing (NLP) techniques to **predict stock price movements** based on news reports, focusing on the **car manufacturing sector**. Multiple transformer-based models (decoders only) were applied to both company-specific and multi-company datasets, using time-lagged stock price data to analyze the impact of news on financial performance.
 
-> 🔗 Labeled dataset I created available on Kaggle:  
+> Labeled dataset I created available on Kaggle:  
 > [Car Manufacturing Companies - News Reports](https://www.kaggle.com/datasets/alexbalan08/car-manufacturing-companies-related-newsreports)
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **Source**: News and financial data collected from [FactSet](https://www.factset.com)
 - **Time Span**: 20 years
@@ -18,7 +18,7 @@ This project explores the use of Natural Language Processing (NLP) techniques to
 
 ---
 
-## 🧹 Data Preprocessing
+## Data Preprocessing
 
 - Lowercasing
 - Stop word removal (notnecessary for Transformers models however. I stronlgy advice to try the work using the full corpuses)
@@ -28,7 +28,7 @@ This project explores the use of Natural Language Processing (NLP) techniques to
 
 ---
 
-## 🤖 Models Used
+## Models Used
 
 All models were sourced from [Hugging Face](https://huggingface.co):
 
@@ -45,7 +45,7 @@ Each model was:
 
 ---
 
-## 🚀 Project Workflow
+## Project Workflow
 
 1. **Data Collection**
    - News and stock price data from FactSet
@@ -58,7 +58,7 @@ Each model was:
 
 ---
 
-## ✅ Notes
+## Notes
 
 - This is a **testing-focused NLP research project**, so results may vary from initial baselines.
 - Models were not tuned for production performance but for exploring relative effectiveness on financial sentiment prediction.
