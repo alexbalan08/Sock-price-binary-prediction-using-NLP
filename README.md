@@ -1,6 +1,6 @@
-# 📈 Personal NLP Project: Predicting Stock Price Movements Based on News
+# NLP Project: Predicting Stock Price Movements Based on News - Bachelor Thesis
 
-This project explores the use of Natural Language Processing (NLP) techniques to **predict stock price movements** based on news reports, focusing on the **car manufacturing sector**. Multiple transformer-based models (decoders only) were applied to both company-specific and multi-company datasets, using time-lagged stock price data to analyze the impact of news on financial performance.
+This project explores the use of Natural Language Processing (NLP) techniques to **predict stock price movements** based on news reports, focusing on the **car manufacturing sector**. Multiple transformer-based models (encoders only) were applied to both company-specific and multi-company datasets, using stock price data to analyze the impact of news on financial performance, after the release of the news 1 day, 3 days and 5 days later. 
 
 > Labeled dataset I created available on Kaggle:  
 > [Car Manufacturing Companies - News Reports](https://www.kaggle.com/datasets/alexbalan08/car-manufacturing-companies-related-newsreports)
@@ -21,7 +21,7 @@ This project explores the use of Natural Language Processing (NLP) techniques to
 ## Data Preprocessing
 
 - Lowercasing
-- Stop word removal (notnecessary for Transformers models however. I stronlgy advice to try the work using the full corpuses)
+- Stop word removal (not necessary for Transformers models however, especially if the news are short. I stronlgy advice to try the work using the full corpuses)
 - No stemming or lemmatization (to preserve context, again not really needed for transformers with short sentences)
 - Multiple **time windows** analyzed:
   - Stock price movement **1 day**, **3 days**, and **5 days** after news release
@@ -32,7 +32,7 @@ This project explores the use of Natural Language Processing (NLP) techniques to
 
 All models were sourced from [Hugging Face](https://huggingface.co):
 
--As this is a **classification task**, a decoder model will alaways produce better results than other arhitectures. No need to try GPT models for example. 
+-As this is a **classification task**, an encoder model will alaways produce better results than other arhitectures (maybe nowdays with gpt-4...).  
 
 - **BERT**
 - **RoBERTa**
@@ -50,19 +50,19 @@ Each model was:
 1. **Data Collection**
    - News and stock price data from FactSet
 2. **Preprocessing**
-   - Basic text cleaning (no aggressive normalization)
+   - Basic text cleaning + stop words removal
 3. **Model Implementation**
-   - Applied transformer-based classification models from Hugging Face
+   - Applied transformer-based classification models from Hugging Face + fine tunning them on my dataset
 4. **Evaluation**
-   - Performance compared across timeframes and model architectures
+   - Performance compared across timeframes and models on both datasets (30 companies and only Ford)
 
 ---
 
 ## Notes
 
 - This is a **testing-focused NLP research project**, so results may vary from initial baselines.
-- Models were not tuned for production performance but for exploring relative effectiveness on financial sentiment prediction.
-
+- A report with the findings and research case study is available as well.
+  
 ---
 
 The notebook presents detailed results with explanantions and steps. 
