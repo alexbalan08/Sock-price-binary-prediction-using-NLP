@@ -58,9 +58,8 @@ Each model was:
 
 ---
 
-## Notes
 
-- This is a **testing-focused NLP research project**, so results may vary from initial baselines.
+
 - A report with the findings and research case study is available as well.
   
 ---
