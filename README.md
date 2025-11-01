@@ -1,4 +1,4 @@
-# NLP Project: Predicting Stock Price Movements Based on News - Bachelor Thesis
+# NLP Project: Predicting Stock Price Movements Based on News - Transformer 
 
 This project explores the use of Natural Language Processing (NLP) techniques to **predict stock price movements** based on news reports, focusing on the **car manufacturing sector**. Multiple transformer-based models (encoders only) were applied to both company-specific and multi-company datasets, using stock price data to analyze the impact of news on financial performance, after the release of the news 1 day, 3 days and 5 days later. 
 
@@ -15,6 +15,9 @@ This project explores the use of Natural Language Processing (NLP) techniques to
 - **Two dataset versions**:
   - **Multi-company dataset**: News for 30 companies
   - **Single-company dataset**: News for one specific company, same timeframe and preprocessing- Ford Motor Company (because I'm a Ford fan :) )
+ 
+  - All data is available (after pre processing) on Kaggle: ready to use
+  - [Car Manufacturing Companies - News Reports](https://www.kaggle.com/datasets/alexbalan08/car-manufacturing-companies-related-newsreports)
 
 ---
 
@@ -32,7 +35,7 @@ This project explores the use of Natural Language Processing (NLP) techniques to
 
 All models were sourced from [Hugging Face](https://huggingface.co):
 
--As this is a **classification task**, an encoder model will alaways produce better results than other arhitectures (maybe nowdays with gpt-4...).  
+-As this is a **classification task**, an encoder model will alaways produce better results than other arhitectures (maybe nowdays with gpt-4 not anymore...).  
 
 - **BERT**
 - **RoBERTa**
@@ -54,7 +57,7 @@ Each model was:
 3. **Model Implementation**
    - Applied transformer-based classification models from Hugging Face + fine tunning them on my dataset
 4. **Evaluation**
-   - Performance compared across timeframes and models on both datasets (30 companies and only Ford)
+   - Performance compared across timeframes and models on both datasets (30 companies and only Ford dataset)
 
 ---
 
