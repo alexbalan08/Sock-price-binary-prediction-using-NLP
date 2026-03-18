@@ -1,6 +1,8 @@
 # NLP Project: Predicting Stock Price Movements Based on News - Transformer 
 
-In this project i explored use of Natural Language Processing (NLP) techniques to **predict stock price movements** based on news reports, focusing on the **car manufacturing sector**. Multiple transformer-based models (encoders only) were applied to both company-specific and multi-company datasets, using stock price data to analyze the impact of news on financial performance, after the release of the news 1 day, 3 days and 5 days later (this was made to study the lag of price chnages after news release). 3 different encoders (one tunned for fnanncial data) were tested and also further fine tuned to suit my data. 
+In this project i explored use of Natural Language Processing (NLP) techniques to **predict stock price movements** based on news reports, focusing on the **car manufacturing sector**. Multiple transformer-based models (encoders only) were applied to both company-specific and multi-company datasets, using stock price data to analyze the impact of news on financial performance, after the release of the news 1 day, 3 days and 5 days later (this was made to study the lag of price chnages after news release).
+Three different encoders (one tunned for fnanncial data) were tested and also further fine tuned to suit my data. 
+
 
 For this work, I collected and automatically labeled two datasets used for this work.
 
