@@ -1,6 +1,8 @@
 # NLP Project: Predicting Stock Price Movements Based on News - Transformer 
 
-This project explores the use of Natural Language Processing (NLP) techniques to **predict stock price movements** based on news reports, focusing on the **car manufacturing sector**. Multiple transformer-based models (encoders only) were applied to both company-specific and multi-company datasets, using stock price data to analyze the impact of news on financial performance, after the release of the news 1 day, 3 days and 5 days later. 
+In this project i explored use of Natural Language Processing (NLP) techniques to **predict stock price movements** based on news reports, focusing on the **car manufacturing sector**. Multiple transformer-based models (encoders only) were applied to both company-specific and multi-company datasets, using stock price data to analyze the impact of news on financial performance, after the release of the news 1 day, 3 days and 5 days later (this was made to study the lag of price chnages after news release). 3 different encoders (one tunned for fnanncial data) were tested and also further fine tuned to suit my data. 
+
+For this work, I collected and automatically labeled two datasets used for this work.
 
 > Labeled dataset I created available on Kaggle:  
 > [Car Manufacturing Companies - News Reports](https://www.kaggle.com/datasets/alexbalan08/car-manufacturing-companies-related-newsreports)
@@ -24,8 +26,8 @@ This project explores the use of Natural Language Processing (NLP) techniques to
 ## Data Preprocessing
 
 - Lowercasing
-- Stop word removal (not necessary for Transformers models however, especially if the news are short. I stronlgy advice to try the work using the full corpuses)
-- No stemming or lemmatization (to preserve context, again not really needed for transformers with short sentences)
+- Stop word removal (not necessary for Transformers models however, especially if the news are short. I stronlgy advice to try the work using the full corpus)
+- No stemming or lemmatization (to preserve context, again not really needed for transformers, especially with short sentences im headers)
 - Multiple **time windows** analyzed:
   - Stock price movement **1 day**, **3 days**, and **5 days** after news release
 
@@ -35,7 +37,7 @@ This project explores the use of Natural Language Processing (NLP) techniques to
 
 All models were sourced from [Hugging Face](https://huggingface.co):
 
--As this is a **classification task**, an encoder model will alaways produce better results than other arhitectures (maybe nowdays with gpt-4 not anymore...).  
+-As this is a **classification task**, an encoder model will alaways produce better results than other arhitectures (maybe nowdays not anymore...).  
 
 - **BERT**
 - **RoBERTa**
